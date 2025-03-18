@@ -1,0 +1,63 @@
+* {
+  /* color:hotpink; */
+}
+body {
+  background-color: rgb(253, 249, 250);
+  font-family: "Kanit:ital";
+}
+h1 {
+  color: green;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+h3 {
+  color: crimson;
+}
+.blue-color {
+  color: rgb(237, 126, 14);
+}
+#pink-color {
+  color: pink;
+}
+section {
+  text-align: center;
+  border: 1px solid red;
+  font-weight: bold;
+}
+
+.heading-border {
+  border: 3px dashed green;
+}
+/* h1{
+    color:red;
+}
+h2{
+    color:blue;
+}
+p{
+    color:green;}
+    /*
+    font-weight:bold; */
+
+/* li{
+    color:brown;
+}
+
+h3{
+    color:violet;
+}  */
+
+/*
+curly braces{}
+parentheses <>
+square brackets []
+round brackets ()
+colon :
+simicolon ;
+syntex:rules of the lang
+
+*/
