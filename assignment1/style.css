@@ -1,11 +1,84 @@
 /* why I choose to use...*/
-ol{
-    color: red;
+* {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(212, 207, 207);
 }
-ul{
-    color: rgb(19, 133, 95);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.box {
+    width: 100%; 
+    height: 30%; 
+    background-color: rgb(139, 139, 139);
+    padding: 30px;
 }
-h3{
-    color: blueviolet;
+
+h1{
+    font-family: "Bytesized", sans-serif;
+    font-weight:bold;
+    font-style: normal;
+    font-size: 3rem;
+    flex-wrap: wrap;
+    text-align: center;
+
 }
+#below{
+    font-family: "Bytesized", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:2rem 
+  }
+
+a{
+    background-color: rgb(139, 139, 139);
+    color: rgb(251, 18, 119) 
+    
+}
+
+h3 {
+    font-family:  "Anton", sans-serif;
+    line-height: 1.4;
+    word-spacing: 4px;
+    letter-spacing: 0.4px;
+    font-size: 1.2rem ;
+    font-weight: 50;
+    color:rgb(82, 80, 80) 
+    
+}
+
+ol {
+    font-family:  "Anton", sans-serif;
+    line-height: 1.4;
+    word-spacing: 2px;
+    letter-spacing: 0.4px;
+    font-size: 1.4rem ;
+    font-weight: 10% ;
+    color:rgb(39, 38, 38) 
+
+}
+ul {
+    font-family:  "Anton", sans-serif;
+    line-height: 1.4;
+    word-spacing: 2px;
+    letter-spacing: 0.4px;
+    font-size: 1.2rem ;
+    font-weight: 50;
+    color:rgb(82, 80, 80);
+}
+li{
+    margin-bottom: 2%;
+    margin-top: 2%;
+
+}
+
+@keyframes colorChange {
+    0% { color: red; }
+    25%{color:orange}
+    50% { color: yellow; }
+    75%{color:rgb(27, 239, 12)}
+    100% { color: blue; }
+
+
+  }
+  .box {
+    animation: colorChange 5s infinite;
+  }
