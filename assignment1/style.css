@@ -4,7 +4,10 @@
     box-sizing: border-box;
     background-color: rgb(175, 174, 174);
 }
-
+body{
+    background-image: url(background.jpg);
+}
+I have tried to insert multiple images for the background, and this images 
 .box {
     width: 100%; 
     height: 30%; 
@@ -29,8 +32,9 @@ h1{
   }
 
 a{
-    background-color: rgb(139, 139, 139);
+    background-color: transparent;
     color: rgb(251, 18, 119) 
+    
     
 }
 
@@ -84,42 +88,41 @@ h4{
   }
 
   #ebox{
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(120, 120, 120);
     padding: 5px;
     margin: auto;
     line-height: 50px;
     max-width: 50ch;
   }
-  /* I have increase the value of the colour by 20 each time to create a gradient ramp, providing a visual effect when scrolling down. */
+  /* I have increase the value of the colour by 10 each time to create a gradient ramp, providing a visual effect when scrolling down. */
   #rbox{
-    background-color: rgb(90, 90, 90);
-    padding: 5px;
-    margin: auto;
-    line-height: 50px;
-    max-width: 100ch;
-  }
-  #tbox{
-    background-color: rgb(110, 110, 110);
-    padding: 5px;
-    margin: auto;
-    line-height: 50px;
-    max-width: 100ch;
-  }
-  #ybox{
     background-color: rgb(130, 130, 130);
     padding: 5px;
     margin: auto;
     line-height: 50px;
     max-width: 100ch;
   }
-  #ubox{
+  #tbox{
+    background-color: rgb(140, 140, 140);
+    padding: 5px;
+    margin: auto;
+    line-height: 50px;
+    max-width: 100ch;
+  }
+  #ybox{
     background-color: rgb(150, 150, 150);
     padding: 5px;
     margin: auto;
     line-height: 50px;
     max-width: 100ch;
   }
-  /* for the texts after this I have adjust the increasing value of 20 to 10, because there isn't enough values if I countinously raise by 20. White is the maximum  (rgb 255,255,255) */
+  #ubox{
+    background-color: rgb(160, 160, 160);
+    padding: 5px;
+    margin: auto;
+    line-height: 50px;
+    max-width: 100ch;
+  }
   #abox{
     background-color: rgb(170, 170, 170);
     padding: 5px;
@@ -146,30 +149,35 @@ h4{
     padding: 5px;
     margin: auto;
     line-height: 50px;
+    max-width: 100ch;
   }
   #gbox {
     background-color: rgb(210, 210, 210);
     padding: 5px;
     margin: auto;
     line-height: 50px;
+    max-width: 100ch;
   }
   #hbox {
     background-color: rgb(220, 220, 220);
     padding: 5px;
     margin: auto;
     line-height: 50px;
+    max-width: 100ch;
   }
   #jbox {
     background-color: rgb(230, 230, 230);
     padding: 5px;
     margin: auto;
     line-height: 50px;
+    max-width: 100ch;
   }
   #cbox {
     background-color: rgb(230, 230, 230);
     padding: 5px;
     margin: auto;
     line-height: 50px;
+    max-width: 100ch;
   }
     .zoom-text {
         
