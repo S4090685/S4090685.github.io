@@ -4,17 +4,24 @@
     box-sizing: border-box;
     background-color: rgb(175, 174, 174);
 }
+/* I have set the background colour to this gray because it is close to the colour of the image.
+ */
 body{
     background-image: url(background.jpg);
 }
-I have tried to insert multiple images for the background, and this images 
+/* I have tried to insert multiple images for the background,
+and this images matches best with the theme I want to create, 
+also because when I tried with other images, it appears as multiple 
+pictures in one. */
 .box {
     width: 100%; 
     height: 30%; 
     background-color: rgb(139, 139, 139);
     padding: 30px;
 }
-
+/* this box is for the title of the website, I had to adjust it for a few times
+as it appeared to have weird gaps and sizing at the srtart. I created this box because
+I want to highlight the title and bracket it out with other contents. */
 h1{
     font-family: "Bytesized", sans-serif;
     font-weight:bold;
@@ -22,8 +29,19 @@ h1{
     font-size: 3rem;
     flex-wrap: wrap;
     text-align: center;
-
 }
+@keyframes colorChange {
+  0% { color: red; }
+  25%{color:orange}
+  50% { color: yellow; }
+  75%{color:rgb(27, 239, 12)}
+  100% { color: blue; }
+}
+/* I have chose this font particularly as it has a gaming style, it is pixelated and matches the style I wanted to create
+with alannn.com. later on I felt like something is missing with the font, seemed a bit boring, so I search for adding colour animations
+to the font, the colour changes from red, orange, yellow, green to blue, and continously looping.
+The colour follows the rainbow colour and gives a playfil feeling. It is also a main focus of the website, as the overall colour is gray.
+  */
 #below{
     font-family: "Bytesized", sans-serif;
     font-weight: 400;
@@ -34,8 +52,7 @@ h1{
 a{
     background-color: transparent;
     color: rgb(251, 18, 119) 
-    
-    
+    /* I have chose a hotpink colour because this colour is very bright and eye catching */
 }
 
 h3 {
@@ -46,7 +63,6 @@ h3 {
     font-size: 1.4rem ;
     font-weight: 50;
     color:rgb(82, 80, 80) 
-    
 }
 
 h4 {
@@ -56,9 +72,13 @@ h4 {
     letter-spacing: 0.4px;
     font-size: 1.4rem ;
     font-weight: 10% ;
-    color:rgb(39, 38, 38) 
-
+    color:rgb(39, 38, 38)
 }
+h4{
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
 li {
     font-family:  "Anton", sans-serif;
     line-height: 1.4;
@@ -68,21 +88,9 @@ li {
     font-weight: 50;
     color:rgb(82, 80, 80);
 }
-h4{
-    margin-bottom: 2%;
-    margin-top: 2%;
+/* All the texts uses the same font and sizings because I want them to look united and simple,
+instead of dazzling all over the screen. */
 
-}
-
-@keyframes colorChange {
-    0% { color: red; }
-    25%{color:orange}
-    50% { color: yellow; }
-    75%{color:rgb(27, 239, 12)}
-    100% { color: blue; }
-
-
-  }
   .box {
     animation: colorChange 5s infinite;
   }
@@ -192,3 +200,6 @@ h4{
         text-align: center;
        
       }
+      /* I have used a zoom in tool for my answers of the question,
+      it is a type of interaction when mouse hover on it, the text zooms in and changes its colour to white. 
+      highlighting my answer compare to the question and the overall colour theme.  */
