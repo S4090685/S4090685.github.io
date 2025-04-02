@@ -2,7 +2,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(212, 207, 207);
+    background-color: rgb(175, 174, 174);
 }
 
 .box {
@@ -37,15 +37,15 @@ a{
 h3 {
     font-family:  "Anton", sans-serif;
     line-height: 1.4;
-    word-spacing: 4px;
+    word-spacing: 3px;
     letter-spacing: 0.4px;
-    font-size: 1.2rem ;
+    font-size: 1.4rem ;
     font-weight: 50;
     color:rgb(82, 80, 80) 
     
 }
 
-ol {
+h4 {
     font-family:  "Anton", sans-serif;
     line-height: 1.4;
     word-spacing: 2px;
@@ -55,16 +55,16 @@ ol {
     color:rgb(39, 38, 38) 
 
 }
-ul {
+li {
     font-family:  "Anton", sans-serif;
     line-height: 1.4;
     word-spacing: 2px;
     letter-spacing: 0.4px;
-    font-size: 1.2rem ;
+    font-size: 0.9rem ;
     font-weight: 50;
     color:rgb(82, 80, 80);
 }
-li{
+h4{
     margin-bottom: 2%;
     margin-top: 2%;
 
@@ -82,3 +82,105 @@ li{
   .box {
     animation: colorChange 5s infinite;
   }
+
+  #ebox{
+    background-color: rgb(70, 70, 70);
+    padding: 5px;
+    margin: auto;
+    line-height: 50px;
+    max-width: 50ch;
+  }
+  /* I have increase the value of the colour by 20 each time to create a gradient ramp, providing a visual effect when scrolling down. */
+  #rbox{
+    background-color: rgb(90, 90, 90);
+    padding: 5px;
+    margin: auto;
+    line-height: 50px;
+    max-width: 100ch;
+  }
+  #tbox{
+    background-color: rgb(110, 110, 110);
+    padding: 5px;
+    margin: auto;
+    line-height: 50px;
+    max-width: 100ch;
+  }
+  #ybox{
+    background-color: rgb(130, 130, 130);
+    padding: 5px;
+    margin: auto;
+    line-height: 50px;
+    max-width: 100ch;
+  }
+  #ubox{
+    background-color: rgb(150, 150, 150);
+    padding: 5px;
+    margin: auto;
+    line-height: 50px;
+    max-width: 100ch;
+  }
+  /* for the texts after this I have adjust the increasing value of 20 to 10, because there isn't enough values if I countinously raise by 20. White is the maximum  (rgb 255,255,255) */
+  #abox{
+    background-color: rgb(170, 170, 170);
+    padding: 5px;
+    margin: auto;
+    line-height: 50px;
+    max-width: 100ch;
+  }
+  #sbox{
+    background-color: rgb(180, 180, 180);
+    padding: 5px;
+    margin: auto;
+    line-height: 50px;
+    max-width: 100ch;
+  }
+  #dbox{
+    background-color: rgb(190, 190, 190);
+    padding: 5px;
+    margin: auto;
+    line-height: 50px;
+    max-width: 100ch;
+  }
+  #fbox {
+    background-color: rgb(200, 200, 200);
+    padding: 5px;
+    margin: auto;
+    line-height: 50px;
+  }
+  #gbox {
+    background-color: rgb(210, 210, 210);
+    padding: 5px;
+    margin: auto;
+    line-height: 50px;
+  }
+  #hbox {
+    background-color: rgb(220, 220, 220);
+    padding: 5px;
+    margin: auto;
+    line-height: 50px;
+  }
+  #jbox {
+    background-color: rgb(230, 230, 230);
+    padding: 5px;
+    margin: auto;
+    line-height: 50px;
+  }
+  #cbox {
+    background-color: rgb(230, 230, 230);
+    padding: 5px;
+    margin: auto;
+    line-height: 50px;
+  }
+    .zoom-text {
+        
+        font-size: 20px;
+        transition: transform 0.3s ease-in-out, color 0.3s, text-shadow 0.3s;
+        text-align: center;
+    }
+      
+      .zoom-text:hover {
+        transform: scale(1.5);
+        color: rgb(255, 255, 255);
+        text-align: center;
+       
+      }
