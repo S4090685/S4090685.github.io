@@ -93,17 +93,13 @@ nav a {
   background-color: var(--main-btn-bg-color);
   color: var(--main-text-color);
   border: none;
-  padding: 8px 12px;
+  padding: 5px 5px;
   cursor: pointer;
   font-size: 16px;
   display: flex;
   align-items: center;
 }
-#rewindBtn {
-  display: flex;
-  align-items: start;
-  
-}
+
 .progress-bar {
   width: 100%;
   height: 10px;
@@ -127,4 +123,7 @@ footer {
   text-align: center;
   padding: 10px 0;
   width: 100%;
+}
+.timeDisplay {
+  padding-left: 100%;
 }

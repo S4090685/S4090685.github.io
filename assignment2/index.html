@@ -34,23 +34,15 @@
     <main class="container">
       <!-- Media Player Section -->
       <div class="media-player">
-        <video id="custom-video-player" >
-          <source 
-            src="265816_medium.mp4"
-            type="video/mp4"
-            
-          />
-        </video>
-      <div class="audio-player">
-        <audio id="erokia-ambient">
-          <source 
-            src="erokia_ambient-wave-56-msfxp7-78.mp3"
-            type="audio/mp3"
-          />
-
-        </audio>
-      </div>
-        
+          <video id="custom-video-player" controls loop>
+            <!-- adding loop to the video -->
+            <source 
+              src="265816_medium.mp4"
+              type="video/mp4"
+              
+            />
+          </video>
+          
         <div class="custom-controls">
           <button id="play-pause-btn" onclick="togglePlayPause()">
             <img
@@ -59,21 +51,59 @@
               alt="Play Button"
               width="24"
               height="24"
-            />
-          </button>
-          <!-- add the missing buttons or functionality here -->
-          <div class="progress-bar">
-            <span id="progress-bar-fill"></span>
-          </div>
-          <button id="rewindBtn" onclick="onclickrewind10s()">
-            <img src="icons8-rewind-30.png" 
-              alt="Rewind button"
-              width="24"
-              height="24"
-            />
-          </button>
+          />
+        </button>
+              
+              
+              <!-- add the missing buttons or functionality here -->
+       
+        <button id="rewindBtn" onclick="onclickrewind5s()">
+          <img src="icons8-rewind-30.png" 
+            alt="Rewind button"
+            width="24"
+            height="24"
+          />
+        </button>
+        
           
+        <div class="progress-bar">
+          <span id="progress-bar-fill"></span>
         </div>
+        <button id="forwardBtn" onclick="onclickforward5s()">
+          <img src="icons8-fast-forward-30.png" 
+            alt="forward button"
+            width="24"
+            height="24"
+          />
+        </button>
+        
+        <button id="muteBtn" >
+          <img src="icons8-no-audio-24.png" 
+            alt="mute button"
+            width="30"
+            height="21"
+          />
+        </button>
+        <div class="audio-player">
+          <audio id="erokia-ambient">
+            <source 
+              src="erokia_ambient-wave-56-msfxp7-78.mp3"
+              type="audio/mp3"
+            />
+          </audio>
+
+          <button id="musicBtn" onclick="onclickmusic()">
+            <img src="icons8-music-note-24.png" 
+              alt="music button"
+              width="45"
+              height="30"
+            />
+        </button>
+        </div>
+      </div>
+        </div>
+
+      <div id="timeDisplay">0:00 / 0:59
       </div>
 
       <!-- Additional Content Section -->
@@ -99,7 +129,25 @@
       <a href="https://icons8.com/icon/91480/rewind">Rewind</a> icon by 
       <a href="https://icons8.com">Icons8</a>
      </p>
-     
+     <p>
+      <a href="https://icons8.com/icon/91476/fast-forward">Fast Forward</a> icon by 
+      <a href="https://icons8.com">Icons8</a>
+     </p>
+     <p>
+      <a href="https://icons8.com/icon/YP4ql7eYPcfL/no-audio">No Audio</a> icon by 
+      <a href="https://icons8.com">Icons8</a>
+     </p>
+     <p>
+      <a href="https://icons8.com/icon/89091/musical">Music Note</a> icon by 
+      <a href="https://icons8.com">Icons8</a>
+     </p>
+     <p>
+      video credit <a href="https://pixabay.com/videos/lofi-girl-chill-for-chill-study-265816/">pixbay.com</a>
+     </p>
+     <p>
+      <a href="https://icons8.com/icon/89091/musical">Musical</a> icon by 
+      <a href="https://icons8.com">Icons8</a>
+     </p>
     </footer>
   </body>
 </html>
