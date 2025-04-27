@@ -127,3 +127,18 @@ footer {
 .timeDisplay {
   padding-left: 100%;
 }
+#clickText{
+  cursor: pointer
+}
+#popUpInformation{
+  border: 1px solid var(--primary-bg-color);
+  padding: 50px; 
+  margin: center;
+  background: white; 
+  display:none;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  box-shadow:0 0 10px var(--primary-bg-color);
+}

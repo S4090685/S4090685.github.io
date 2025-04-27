@@ -68,7 +68,18 @@ function playPauseAudio() {
 }
 // cant change the image when click play and pause
 
+// Pop up Info
+const clickText = document.getElementById('clickText');
+const popUpInfo = document.getElementById('popUpInformation');
 
-
+clickText.addEventListener('click', function(event) {
+  if(popUpInfo.style.display === 'none') {
+    popUpInfo.style.display = 'block';
+    
+  } else {
+    popUpInfo.style.display = 'none';
+  }
+});
+ 
 
 
