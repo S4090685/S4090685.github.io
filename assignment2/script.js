@@ -79,7 +79,14 @@ clickText.addEventListener('click', function(event) {
   } else {
     popUpInfo.style.display = 'none';
   }
+  
 });
- 
+
+const closePopUp = document.getElementById('closePopUp');
+
+closePopUp.addEventListener('click', () => {
+  popUpInfo.style.display = 'none';
+});
+
 
 
