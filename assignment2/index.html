@@ -24,18 +24,19 @@
       <ul>
         <li><a href="#">Home</a></li>
         <li id="clickText" ><a href="#">Info</a></li>
-        <!-- Add or remove navigation items as needed -->
       </ul>
+        <!-- Add or remove navigation items as needed -->
+
       <div id="popUpInformation">
         This website is for studying and relaxation, a muted video of an animated girl is studying. The video and Audio is separated which allows to play both media individually. 
         <button id="closePopUp">x
         </button>
       </div>
-      
     </nav>
 
     <!-- Main Content Section -->
     <main class="container">
+
       <!-- Media Player Section -->
       <div class="media-player">
           <video id="custom-video-player" controls loop>
@@ -43,7 +44,6 @@
             <source 
               src="265816_medium.mp4"
               type="video/mp4"
-              
             />
           </video>
           
@@ -57,7 +57,6 @@
               height="24"
           />
         </button>
-              
               
               <!-- add the missing buttons or functionality here -->
        
@@ -82,27 +81,33 @@
         </button>
         
         <button id="muteBtn" >
-          <img src="icons8-no-audio-24.png" 
+          <img id="muteIcon"src="icons8-audio-on-50.png" 
             alt="mute button"
             width="30"
             height="21"
           />
         </button>
+
         <div class="audio-player">
-          <audio id="erokia-ambient">
+          <audio id="background-music">
             <source 
-              src="erokia_ambient-wave-56-msfxp7-78.mp3"
+              src="erokia_ambient-wave-56-msfxp7-78.mp3" loop
               type="audio/mp3"
             />
           </audio>
 
           <button id="musicBtn" onclick="onclickmusic()">
-            <img src="icons8-music-note-24.png" 
-              alt="music button"
-              width="45"
+            <img id="musicIcon" src="icons8-music-note-play.png" 
+              alt="play music"
+              width="50"
               height="30"
             />
         </button>
+        <button id="pauseIcon">
+          <img src="icons8-music-note-pause.png" alt="pause">
+        </button>
+
+        
         </div>
       </div>
         </div>
@@ -150,6 +155,14 @@
      </p>
      <p>
       <a href="https://icons8.com/icon/89091/musical">Musical</a> icon by 
+      <a href="https://icons8.com">Icons8</a>
+     </p>
+     <p>
+      <a href="https://icons8.com/icon/l8a8SgRWyFgp/no-audio">No Audio</a> icon by 
+      <a href="https://icons8.com">Icons8</a>
+     </p>
+     <p>
+      <a href="https://icons8.com/icon/9414/no-audio">No Audio</a> icon by 
       <a href="https://icons8.com">Icons8</a>
      </p>
     </footer>

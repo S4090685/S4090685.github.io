@@ -1,9 +1,10 @@
 :root {
-  --primary-bg-color: #e1eef7;
-  --text-color: #305365;
-  --main-bg-color: #b2d5eb;
-  --main-text-color: #032d3e;
-  --main-btn-bg-color: #e1eef7;
+  --primary-bg-color: #005faa;
+  --text-color: #dceafa;
+  --main-bg-color: #5690d2;
+  --main-text-color: #dceafa;
+  --main-btn-bg-color: #005faa;
+  --box-color: #aebde9;
 }
 
 body,
@@ -150,4 +151,15 @@ footer {
   cursor: pointer;
   border: transparent;
   width: 25px;
+}
+audio {
+  display: none;
+}
+#musicBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+#pauseIcon{
+  display: none;
 }
