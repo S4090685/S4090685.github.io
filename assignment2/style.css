@@ -4,7 +4,8 @@
   --main-bg-color: #5690d2;
   --main-text-color: #dceafa;
   --main-btn-bg-color: #005faa;
-  --box-color: #aebde9;
+  --box-color: #beccf5;
+  --box-text-color:#2a4289;
 }
 
 body,
@@ -135,12 +136,13 @@ footer {
   border: 1px solid var(--primary-bg-color);
   margin: center;
   box-shadow: 0 0 10px var(--primary-bg-color);
+  color: var(--box-text-color);
   display: none;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: white;
+  background: var(--box-color);
   padding: 5em;
   z-index: 999;
 }
