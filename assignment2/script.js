@@ -5,6 +5,15 @@ const playPauseImg = document.querySelector("#play-pause-img");
 const progressBar = document.querySelector("#progress-bar-fill");
 video.removeAttribute("controls");
 
+// welcoming message
+window.onload = function() {
+  document.getElementById('welcomeInfo').style.display = 'flex';
+}
+
+// Close the popup when button is clicked
+document.getElementById('okBtn').onclick = function() {
+  document.getElementById('welcomeInfo').style.display = 'none';
+}
 // playPauseBtn.addEventListener("click", togglePlayPause);
 video.addEventListener("timeupdate", updateProgressBar);
 function togglePlayPause() {
@@ -50,21 +59,22 @@ console.log(video.currentTime);
 
 // audio setting
 const mutebtn = document.getElementById("muteBtn");
+console.log(mutebtn);
 const muteIcon = document.getElementById("muteIcon");
 const music = document.getElementById("background-music");
-
-
+console.log(music);
 mutebtn.addEventListener("click", () => {
-  backgroundMusic.muted = !backgroundMusic.muted;
-
-if (backgroundMusic.paused || backgroundMusic.ended) {
-  backgroundMusic.play();
-  muteIcon.src = "https://img.icons8.com/?size=100&id=9982&format=png&color=000000"; // pause icon
-} else {
-  backgroundMusic.pause();
-  muteIcon.src = "https://img.icons8.com/?size=100&id=9414&format=png&color=000000"; // play icon
-}
+  // music.muted = !music.muted;
+ console.log(music.muted);
+  if (music.muted) {
+    music.muted = false;
+    muteIcon.src = "https://img.icons8.com/?size=100&id=9982&format=png&color=000000"; // muted icon
+  } else {
+    music.muted = true;
+    muteIcon.src = "https://img.icons8.com/?size=100&id=9414&format=png&color=000000"; // unmuted icon
+  }
 });
+
 
 
 

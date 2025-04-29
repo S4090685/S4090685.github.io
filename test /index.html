@@ -1,13 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Music Button</title>
-
+  <title>Countdown Timer</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input {
+      width: 50px;
+      text-align: center;
+    }
+    #timer {
+      font-size: 48px;
+      margin-top: 20px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
 </head>
 <body>
 
-   
+  <h2>Countdown Timer</h2>
+  <label>Minutes: <input type="number" id="minutes" min="0" value="0"></label>
+  <label>Seconds: <input type="number" id="seconds" min="0" value="0"></label>
+  <div>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="stopTimer()">Stop</button>
+  </div>
+
+  <div id="timer">00:00</div>
+
+  <script>
+    let countdown;
+
+    function startTimer() {
+      clearInterval(countdown); // Clear previous timer if any
+      let minutes = parseInt(document.getElementById("minutes").value) || 0;
+      let seconds = parseInt(document.getElementById("seconds").value) || 0;
+      let totalSeconds = minutes * 60 + seconds;
+
+      countdown = setInterval(() => {
+        let min = Math.floor(totalSeconds / 60);
+        let sec = totalSeconds % 60;
+        document.getElementById("timer").textContent =
+          `${String(min).padStart(2, '0')}:${String(sec).padStart(2, '0')}`;
+
+        if (totalSeconds <= 0) {
+          clearInterval(countdown);
+          alert("Time's up!");
+        }
+        totalSeconds--;
+      }, 1000);
+    }
+
+    function stopTimer() {
+      clearInterval(countdown);
+    }
+  </script>
 
 </body>
 </html>
