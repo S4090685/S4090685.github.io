@@ -114,7 +114,9 @@ musicBtn.addEventListener("click", function() {
 
 // Pop up Info
 const clickText = document.getElementById('clickText');
+console.log(clickText);
 const popUpInfo = document.getElementById('popUpInformation');
+console.log(popUpInfo)
 
 clickText.addEventListener('click', function(event) {
   if(popUpInfo.style.display === 'none') {
@@ -127,10 +129,51 @@ clickText.addEventListener('click', function(event) {
 });
 
 const closePopUp = document.getElementById('closePopUp');
+console.log(closePopUp)
 
 closePopUp.addEventListener('click', () => {
   popUpInfo.style.display = 'none';
 });
 
+// timer section
 
+const minutes = document.getElementById("minutes");
+console.log(minutes)
+const seconds = document.getElementById("seconds");
+console.log(seconds)
+let countdown;
 
+function startTimer() {
+  clearInterval(countdown);
+  let minutes = parseInt(document.getElementById("minutes").value) || 0;
+  let seconds = parseInt(document.getElementById("seconds").value) || 0;
+  let totalSeconds = minutes * 60 + seconds;
+
+  countdown = setInterval(() => {
+    let min = Math.floor(totalSeconds / 60);
+    let sec = totalSeconds % 60;
+    document.getElementById("timer").textContent =
+      `${String(min).padStart(2, '0')}:${String(sec).padStart(2, '0')}`;
+
+    if (totalSeconds <= 0) {
+      clearInterval(countdown);
+      showPopup();
+    }
+
+    totalSeconds--;
+  }, 1000);
+}
+
+// I have found the code on ChatGPT and typed in so I could understand. It is found on ChatGPT as I coudn't find a start and stop timer with the libaries. 
+
+function stopTimer() {
+  clearInterval(countdown);
+}
+
+function showPopup() {
+  document.getElementById("popupModal").style.display = "block";
+}
+
+document.getElementById("closeBtn").onclick = function () {
+  document.getElementById("popupModal").style.display = "none";
+};

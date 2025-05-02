@@ -16,7 +16,7 @@
   <body>
     <!-- Header Section -->
     <header>
-      <h1>Media Player Website</h1>
+      <h1>Study Room 1</h1>
     </header>
 
     <div class="welcome-Info" id="welcomeInfo">
@@ -129,11 +129,30 @@
       </div>
 
       <!-- Additional Content Section -->
-      <section>
-        <h2>Additional Content</h2>
-        <p>This is where you can showcase any other relevant content.</p>
-        <!-- Add more content as needed -->
-      </section>
+       <div class="timer-section">
+        <section>
+          <h2>Set a timer to start focusing! </h2>
+          <p> Hima is also studying with you!</p>
+          <p>Remember to balance work and rest, also use the timer for your relaxation time!</p>
+        </section>
+        <div id="timer">00:00</div>
+        <label>Minutes: <input type="number" id="minutes" min="0" value="0"></label>
+        <label>Seconds: <input type="number" id="seconds" min="0" value="0"></label>
+        <div class="timer-button">
+          <button onclick="startTimer()">Start</button>
+          <button onclick="stopTimer()">Stop</button>
+        </div>
+       </div>
+
+       <div id="popupModal">
+        <div id="popupContent">
+          <h2 class="poptext">Congratulations!</h2>
+          <p class="poptext">You have succeeded! </p>
+          <p class="poptext">Now planning on doing something else?</p>
+          <button id="closeBtn"> close </button>
+        </div>
+      </div>
+     
     </main>
 
     <!-- Footer Section -->
@@ -155,21 +174,12 @@
       <a href="https://icons8.com/icon/91476/fast-forward">Fast Forward</a> icon by 
       <a href="https://icons8.com">Icons8</a>
      </p>
-     <p>
-      <a href="https://icons8.com/icon/YP4ql7eYPcfL/no-audio">No Audio</a> icon by 
-      <a href="https://icons8.com">Icons8</a>
-     </p>
-     <p>
-      <a href="https://icons8.com/icon/89091/musical">Music Note</a> icon by 
-      <a href="https://icons8.com">Icons8</a>
-     </p>
+    
      <p>
       video credit <a href="https://pixabay.com/videos/lofi-girl-chill-for-chill-study-265816/">pixbay.com</a>
      </p>
      <p>
-      <a href="https://icons8.com/icon/89091/musical">Musical</a> icon by 
-      <a href="https://icons8.com">Icons8</a>
-     </p>
+     
      <p>
       <a href="https://icons8.com/icon/l8a8SgRWyFgp/no-audio">No Audio</a> icon by 
       <a href="https://icons8.com">Icons8</a>
@@ -178,6 +188,15 @@
       <a href="https://icons8.com/icon/9414/no-audio">No Audio</a> icon by 
       <a href="https://icons8.com">Icons8</a>
      </p>
+     <p>
+      <a href="https://icons8.com/icon/gNo4Rm7gWE9F/music">Music Note</a> icon by 
+      <a href="https://icons8.com">Icons8</a>
+     </p>
+     <p>
+      <a href="https://icons8.com/icon/lPgbWPoyv7hQ/music">Music Note</a> icon by 
+      <a href="https://icons8.com">Icons8</a>
+     </p>
+
     </footer>
   </body>
 </html>

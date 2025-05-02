@@ -61,6 +61,7 @@ ul {
   background: var(--box-color);
 }
 
+/* body */
 body {
     font-family: "Winky Rough", sans-serif;
     font-weight: 00;
@@ -209,3 +210,54 @@ audio {
 #pauseIcon{
   display: none;
 }
+.timer-section{
+  text-align: center;
+}
+h2{
+  margin-top: 80px;
+  font-size: 2.2rem;
+}
+#timer {
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+.timer-button{
+  margin-top: 20px;
+  padding: 15px 20px;
+  font-size: 25px;
+}
+
+#popupModal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+#popupContent {
+  background-color: var(--main-bg-color);
+  margin: 20% auto;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+}
+.poptext{
+  margin:auto;
+}
+#closeBtn {
+  margin-top: 7px;
+  padding: 8px 16px;
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 15px;;
+  cursor: pointer;
+}
+
