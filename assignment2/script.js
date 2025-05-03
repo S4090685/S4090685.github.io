@@ -116,7 +116,7 @@ musicBtn.addEventListener("click", function() {
 const clickText = document.getElementById('clickText');
 console.log(clickText);
 const popUpInfo = document.getElementById('popUpInformation');
-console.log(popUpInfo)
+console.log(popUpInfo);
 
 clickText.addEventListener('click', function(event) {
   if(popUpInfo.style.display === 'none') {
@@ -134,6 +134,13 @@ console.log(closePopUp)
 closePopUp.addEventListener('click', () => {
   popUpInfo.style.display = 'none';
 });
+
+// to do list 
+const todolist = document.getElementById("click-todo");
+console.log(todolist);
+const todoInfo = document.getElementById("todo-container"); 
+console.log(todoInfo);
+
 
 // timer section
 
