@@ -113,10 +113,7 @@ musicBtn.addEventListener("click", function() {
 // cant change the image when click play and pause
 
 // Pop up Info
-const clickText = document.getElementById('clickText');
-console.log(clickText);
-const popUpInfo = document.getElementById('popUpInformation');
-console.log(popUpInfo);
+
 
 clickText.addEventListener('click', function(event) {
   if(popUpInfo.style.display === 'none') {
@@ -136,11 +133,126 @@ closePopUp.addEventListener('click', () => {
 });
 
 // to do list 
-const todolist = document.getElementById("click-todo");
-console.log(todolist);
-const todoInfo = document.getElementById("todo-container"); 
-console.log(todoInfo);
 
+// function toggleToDo() {
+//   var container = document.getElementById("todoContainer");
+//   container.style.display = (container.style.display === "none") ? "block" : "none";
+// }
+
+// // Create close buttons
+// function attachCloseButtons() {
+//   var myNodelist = document.getElementsByTagName("LI");
+//   for (var i = 0; i < myNodelist.length; i++) {
+//     var span = document.createElement("SPAN");
+//     var txt = document.createTextNode("\u00D7");
+//     span.className = "close";
+//     span.appendChild(txt);
+//     myNodelist[i].appendChild(span);
+//   }
+
+//   var close = document.getElementsByClassName("close");
+//   for (var i = 0; i < close.length; i++) {
+//     close[i].onclick = function () {
+//       var div = this.parentElement;
+//       div.style.display = "none";
+//     }
+//   }
+// }
+
+// attachCloseButtons();
+
+// // Toggle checked
+// var list = document.querySelector('ul');
+// list.addEventListener('click', function (ev) {
+//   if (ev.target.tagName === 'LI') {
+//     ev.target.classList.toggle('checked');
+//   }
+// }, false);
+
+// // Add new element
+// function newElement() {
+//   var li = document.createElement("li");
+//   var inputValue = document.getElementById("myInput").value;
+//   var t = document.createTextNode(inputValue);
+//   li.appendChild(t);
+//   if (inputValue === '') {
+//     alert("You must write something!");
+//   } else {
+//     document.getElementById("myUL").appendChild(li);
+//   }
+//   document.getElementById("myInput").value = "";
+
+//   var span = document.createElement("SPAN");
+//   var txt = document.createTextNode("\u00D7");
+//   span.className = "close";
+//   span.appendChild(txt);
+//   li.appendChild(span);
+
+//   span.onclick = function () {
+//     var div = this.parentElement;
+//     div.style.display = "none";
+//   }
+// }
+function toggleToDo() {
+  var container = document.getElementById("todoContainer");
+  container.style.display = (container.style.display === "none") ? "block" : "none";
+}
+
+// Create close buttons
+function attachCloseButtons() {
+  const items = document.getElementsByTagName("li");
+  for (let i = 0; i < items.length; i++) {
+    if (!items[i].querySelector(".close")) {
+      const span = document.createElement("SPAN");
+      const txt = document.createTextNode("\u00D7");
+      span.className = "close";
+      span.appendChild(txt);
+      items[i].appendChild(span);
+
+      span.onclick = function () {
+        this.parentElement.style.display = "none";
+      }
+    }
+  }
+}
+
+attachCloseButtons();
+
+// Toggle checked
+const list = document.getElementById("myUL");
+list.addEventListener('click', function (ev) {
+  const li = ev.target.closest("li");
+  if (li && list.contains(li)) {
+    li.classList.toggle("checked");
+  }
+});
+
+// Add new item
+function newElement() {
+  const input = document.getElementById("myInput").value;
+  if (input === '') {
+    alert("You must write something!");
+    return;
+  }
+
+  const li = document.createElement("li");
+  li.appendChild(document.createTextNode(input));
+
+  const span = document.createElement("SPAN");
+  const txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  span.onclick = function () {
+    this.parentElement.style.display = "none";
+  }
+
+  document.getElementById("myUL").appendChild(li);
+  document.getElementById("myInput").value = "";
+
+  li.classList.remove("checked"); // ensure it's not pre-checked
+}
 
 // timer section
 

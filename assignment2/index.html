@@ -37,7 +37,7 @@
       <ul>
         <li><a href="#">Home</a></li>
         <li id="clickText" ><a href="#">Info</a></li>
-        <li id="click-todo"><a href="#">To-do List</a></li>
+        <li id="click-todo" onclick="toggleToDo()"><a href="#">To-do List</a></li>
 
       </ul>
         <!-- Add or remove navigation items as needed -->
@@ -48,8 +48,22 @@
         </button>
       </div>
     </nav>
-   <!-- to do list -->
-    
+
+   <!-- to do list onclick -->
+    <div id="todoContainer" style="display: none;">
+      <div id="myDIV" class="header">
+        <h2 style="margin:5px">My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+
+      <ul id="myUL">
+        <li >example 1</li>
+        <li class="checked">example 2</li>
+        
+      </ul>
+    </div>
+
     <!-- Main Content Section -->
     <main class="container">
 
