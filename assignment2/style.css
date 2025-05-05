@@ -8,8 +8,9 @@
   --box-hover-color: #acb9dd;
   --box-text-color:#2a4289;
   --box-checked-color:#8ca0dc;
-
 }
+/* the colours are picked from the video, henece the overall background will match with the video, 
+blue is also a calm and relaxing colour.*/
 * {
   box-sizing: border-box;
 }
@@ -21,16 +22,18 @@ ul {
   padding: 0;
   min-width: 250px;
 }
+
 .welcome-Info {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.5); /* Dim background */
+  background-color: rgba(0,0,0,0.5);
   justify-content: center;
   align-items: center;
   z-index: 1000;
 }
+/* title of the welcoming message */
 #title{
   font-size: 35px;
   font-weight: 500;
@@ -48,7 +51,6 @@ ul {
   width: 600px;
   border-radius: 15px;
   font-size: large;
-
 }
 
 /* close button for welcome content */
@@ -67,6 +69,7 @@ ul {
 }
 
 /* body */
+/* I have chosen and stick with this font because it's not that formal, which sents a calm vibe. */
 body {
     font-family: "Winky Rough", sans-serif;
     font-weight: 00;
@@ -80,16 +83,12 @@ body {
 }
 
 /* Add additional styles as needed */
-
-
-/* Create a container for the main content */
 .container {
   max-width: 1000px;
   width: 100%;
   padding: 50px;
 }
 
-/* Header styling */
 header {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
@@ -150,6 +149,10 @@ nav a {
   font-size: 16px;
   display: flex;
   align-items: center;
+  max-width: 100%; 
+  min-width: 1%;
+  max-height: 100%;
+  min-height: 1%;
 }
 
 .progress-bar {
@@ -182,6 +185,7 @@ footer {
 #clickText{
   cursor: pointer
 }
+
 #popUpInformation{
   border: 1px solid var(--primary-bg-color);
   color: var(--box-text-color);
@@ -204,6 +208,7 @@ footer {
   border: transparent;
   width: 25px;
 }
+/* sounds */
 audio {
   display: none;
 }
@@ -215,12 +220,13 @@ audio {
 #pauseIcon{
   display: none;
 }
+/* timer */
 .timer-section{
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* vertical centering */
-  align-items: center;       /* horizontal centering */
+  justify-content: center;  
+  align-items: center;     
   height: 100vh;
   text-align: center;
   gap: 20px; 
@@ -245,7 +251,7 @@ h2{
   font-size: 30px;
   
 }
-
+/* pop up information */
 #popupModal {
   display: none;
   position: fixed;
