@@ -91,6 +91,7 @@ mutebtn.addEventListener("click", () => {
 //     pauseAudioImgsrc="https://icons8.com/icon/rKfisLUOlNti/music";
 //   } 
 // } 
+
 //this code at the top is the original code for switching icons when play/pause the music, however it didn't work, after checkinng 
 // spellings and punctuations, so I have asked ChatGPT agian. And this time I have copied what it gave me and I compared with my original code.
 //as shown, it may be the issue with the 'consts' which I didn't add for the original code. Both codes are siilar. 
@@ -102,7 +103,7 @@ const backgroundMusic = document.getElementById("background-music");
 
 musicBtn.addEventListener("click", function() {
   if (backgroundMusic.paused || backgroundMusic.ended) {
-    backgroundMusic.currentTime = 0; // Reset to start
+    backgroundMusic.currentTime = 0; 
     backgroundMusic.play();
     musicIcon.src = "https://img.icons8.com/?size=100&id=rKfisLUOlNti&format=png&color=000000"; // pause icon
   } else {
@@ -110,11 +111,8 @@ musicBtn.addEventListener("click", function() {
     musicIcon.src = "https://img.icons8.com/?size=100&id=TVjBOR7PC2Cw&format=png&color=000000"; // play icon
   }
 });
-// cant change the image when click play and pause
 
 // Pop up Info
-
-
 clickText.addEventListener('click', function(event) {
   if(popUpInfo.style.display === 'none') {
     popUpInfo.style.display = 'block';
@@ -132,16 +130,20 @@ closePopUp.addEventListener('click', () => {
   popUpInfo.style.display = 'none';
 });
 
-// to do list 
-
+// to do list this codes are discovered from w3schools. I have also look through other codes of "to do lists", and I think this one is the most convinient one. 
+// it can cross out completed tasks and add/delete lists. 
 function toggleToDo() {
   var container = document.getElementById("todoContainer");
   container.style.display = (container.style.display === "none") ? "block" : "none";
 }
 
-// close buttons for the lists
+// close buttons for the lists 
 function attachCloseButtons() {
   const items = document.getElementsByTagName("myUL");
+  // there was an issue here as the "myUL" was supposed to be li, however all the li appeared with close button and was abke to be deleted
+  // I took some time sorting this out because there was some troubleshoot I guess, and I had to switch between CSS, JS, and HTML to
+  // make the code work on the right spot. 
+
   for (let i = 0; i < items.length; i++) {
     if (!items[i].querySelector(".close")) {
       const span = document.createElement("SPAN");
@@ -157,11 +159,8 @@ function attachCloseButtons() {
   }
 }
 
-
-
+// check
 attachCloseButtons();
-
-// Toggle checked
 const list = document.getElementById("myUL");
 list.addEventListener('click', function (ev) {
   const li = ev.target.closest("li");
@@ -170,7 +169,7 @@ list.addEventListener('click', function (ev) {
   }
 });
 
-// Add new item
+// Add button for lists
 function newElement() {
   const input = document.getElementById("myInput").value;
   if (input === '') {
@@ -198,7 +197,11 @@ function newElement() {
 }
 
 // timer section
-
+// it was hard to find a ideal countdown timer from trusted libaries, so for this timer I have asked ChatGPT to adjust some of the features that I wanted
+// the code was originally from a libary, and I asked for additional features, such as the start and stop buttons and adding the alert once time is up as a pop up tab. I was also thinking of adding a clock, however as we're already browsing a website
+// I thought that is unneccessary because user can just look at the computer, a countdown timer is more conform. 
+// I couldn't type a fully functional javascript without searching through existing code from libaries and asking people. When its urgent(no time to ask and couldn't find idea code) I would type out what I think the code should be like, and I will ask ChatGPT
+// to correct my code, and after that I will type the code out while comparing it with my own code so I can learn from it. But ChatGPT's code is not always correct, so searching through trustful libaries is neccessary.
 const minutes = document.getElementById("minutes");
 console.log(minutes);
 const seconds = document.getElementById("seconds");
@@ -227,7 +230,6 @@ function startTimer() {
   }, 1000);
 }
 
-// I have found the code on ChatGPT and typed in so I could understand. It is found on ChatGPT as I coudn't find a start and stop timer with the libaries. 
 
 function stopTimer() {
   clearInterval(countdown);

@@ -18,12 +18,13 @@
     <header id="website-name">
       <h1>Study Room 1</h1>
     </header>
+    <!-- I decides to name the website study room 1 as study room provides a vide of studying, and the 1 represents this is the first study type of website that I created.  -->
 
     <div class="welcome-Info" id="welcomeInfo">
       <div class="welcome-content">
         <h3 id="title">Welcome to the relaxation of studying </h3>
           <p id="message">This is a space for you to focus on your studying and for relaxation. The video is a background which provides you an atmosphere of a study room.  </p>
-          <p id="message">You can also use other function in the website, scroll down to use the timer function, check the info and use the To-do List at the . Where would you like to start?
+          <p id="message">You can also use other function in the website, scroll down to use the timer function, check the info and use the To-do List. Where would you like to start?
           </p>
           <p> To-do List | Timer | Music | Video </p>
       <button class="ok-Btn" id="okBtn">Got it!</button>
@@ -31,7 +32,6 @@
     </div>
 
    
-
     <!-- Navigation Section -->
     <nav>
       <ul>
@@ -44,12 +44,14 @@
 
       <div id="popUpInformation">
         This website is for studying and relaxation, a muted video of an animated girl is studying. The video and Audio is separated which allows to play both media individually. 
+        you can scroll down the web page and use the timer for countdowns, and use the to do list to organize your tasks, cross out the tasks completed and feel proud of yourself!
         <button id="closePopUp">x
         </button>
       </div>
     </nav>
 
-   <!-- to do list onclick -->
+   <!-- to do list onclick. I personally likes to use to do lists at the begining of the day and whenever before I start working, to do lists is a really helpful tool
+    in organizing things and to get evrything done. -->
     <div id="todoContainer" style="display: none;">
       <div id="myDIV" class="header">
         <h2 style="margin:5px">My To Do List</h2>
@@ -60,7 +62,7 @@
       <ul id="myUL">
       </ul>
     </div>
-
+    
     <!-- Main Content Section -->
     <main class="container">
 
@@ -73,7 +75,8 @@
               type="video/mp4"
             />
           </video>
-          
+          <!-- I heve chosen this video because it gave me a strong vibe of studying, it's suitable with the audio provided for this context.
+           the overall colour used is also the reason that I picked it.-->
         <div class="custom-controls">
           <button id="play-pause-btn" onclick="togglePlayPause()">
             <img
@@ -85,7 +88,7 @@
           />
         </button>
               
-              <!-- add the missing buttons or functionality here -->
+        <!-- add the missing buttons or functionality here -->
        
         <button id="rewindBtn" onclick="onclickrewind5s()">
           <img src="icons8-rewind-30.png" 
@@ -133,8 +136,6 @@
         <button id="pauseIcon">
           <img src="icons8-music-note-pause.png" alt="pause">
         </button>
-
-        
         </div>
       </div>
         </div>
@@ -149,6 +150,7 @@
           <p> Hima is also studying with you!</p>
           <p>Remember to balance work and rest, also use the timer for your relaxation time!</p>
         </section>
+        
         <div id="timer">00:00</div>
         <div id="timer-label">
           <label>Minutes <input type="number" id="minutes" min="0" value="0"></label>
