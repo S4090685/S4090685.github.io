@@ -113,22 +113,21 @@ musicBtn.addEventListener("click", function() {
 });
 
 // Pop up Info
+const clickText = document.getElementById('clickText'); // Ensure you have this element in your HTML
+const popUpInfo = document.getElementById('popUpInformation'); // Corrected ID
+const closePopUp = document.getElementById('closePopUp');
+
 clickText.addEventListener('click', function(event) {
-  if(popUpInfo.style.display === 'none') {
+  if (popUpInfo.style.display === 'none' || popUpInfo.style.display === '') {
     popUpInfo.style.display = 'block';
-    
   } else {
     popUpInfo.style.display = 'none';
   }
-  
 });
-
-const closePopUp = document.getElementById('closePopUp');
-console.log(closePopUp)
 
 closePopUp.addEventListener('click', () => {
   popUpInfo.style.display = 'none';
-});
+}); 
 
 // to do list this codes are discovered from w3schools. I have also look through other codes of "to do lists", and I think this one is the most convinient one. 
 // it can cross out completed tasks and add/delete lists. 
