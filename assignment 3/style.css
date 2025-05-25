@@ -1,4 +1,58 @@
-.card1{
-    height: 200px;
-    width: 100px;
+body{
+    background-color: #fff6f5;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1000px;
+    color: #3c2a21;
+
+}
+.cards{
+    width: 500px;
+    min-height: 500px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 70px;
+}
+.card1a{
+    grid-column: 2/2;
+    grid-row: 2/2;
+    rotate: y 180deg;
+}
+
+.card1b{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.card4a{
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+.card4b{
+    grid-column: 1/2;
+    grid-row: 2/2;
+}
+ .levelBtn{
+    font-size: 1.2rem;
+
+
+}
+#Btn1{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    bottom: 50px;
+    left: 20%;
+}
+#Btn2{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    bottom: 50px;
+    right: 20%;
+
 }
