@@ -10,36 +10,73 @@ body{
 
 }
 .cards{
-    width: 500px;
+    width: 380px;
     min-height: 500px;
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 70px;
+    perspective: 1000px;
+    cursor: pointer;
+
 }
-.card1a{
-    grid-column: 2/2;
-    grid-row: 2/2;
-    rotate: y 180deg;
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* placing the card diagonally for level 1 */
+.card:nth-child(1) {
+  grid-column: 2;
+  grid-row: 1;
 }
 
-.card1b{
-    grid-column: 1/2;
-    grid-row: 1/2;
+.card:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
 }
-.card4a{
-    grid-column: 2/2;
-    grid-row: 1/2;
+
+.card:nth-child(3) {
+  grid-column: 1;
+  grid-row: 1;
 }
-.card4b{
-    grid-column: 1/2;
-    grid-row: 2/2;
+
+.card:nth-child(4) {
+  grid-column: 2;
+  grid-row: 2;
 }
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.card.flip .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-face.back {
+  transform: rotateY(180deg);
+}
+
+.card-face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
  .levelBtn{
     font-size: 1.2rem;
-
-
 }
 #Btn1{
     width: 150px;
@@ -54,5 +91,15 @@ body{
     position: absolute;
     bottom: 50px;
     right: 20%;
-
+    
 }
+
+  
+  /* <div class="card-container">
+      <div class="card" draggable="true">
+        <div class="card-face"><img src="cloud.png" alt="Back" /></div>
+        <div class="card-face flip">
+          <img src="queen.png" alt="Queen" />
+        </div>
+      </div>
+    </div> */

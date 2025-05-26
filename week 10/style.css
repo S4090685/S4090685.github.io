@@ -146,3 +146,12 @@ body {
   #cover:hover {
     scale: 1.1;
   }
+
+  /* <div class="card-container">
+      <div class="card" draggable="true">
+        <div class="card-face"><img src="cloud.png" alt="Back" /></div>
+        <div class="card-face flip">
+          <img src="queen.png" alt="Queen" />
+        </div>
+      </div>
+    </div> */
