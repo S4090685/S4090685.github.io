@@ -29,8 +29,8 @@ header{
   gap: 30px;
 }
 .card {
-  width: 150px;
-  height: 220px;
+  width: 95px;
+  height: 150px;
   position: relative;
   cursor: pointer;
 }
