@@ -1,26 +1,38 @@
+body {
+  background-color: #fff6f5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: #3c2a21;
+}
+
 .cards {
+  width: 500px;
+  min-height: 500px;
+  padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 30px;
-  width: 500px;
-  padding: 20px;
+  gap: 70px;
+  perspective: 1000px;
 }
 
 .card {
-  width: 80%;
-  aspect-ratio: 1/1;
-  perspective: 1000px;
   position: relative;
-  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
 }
 
 .card-inner {
+  width: 100%;
+  height: 100%;
   position: relative;
-  width: 340px;
-height: 500px;
-  transition: transform 0.8s ease;
   transform-style: preserve-3d;
+  transition: transform 0.8s ease;
 }
 
 .card.flip .card-inner {
@@ -32,14 +44,17 @@ height: 500px;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-}
-
-.card-face.back {
-  transform: rotateY(180deg);
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .card-face img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+}
+
+.card-face.back {
+  transform: rotateY(180deg);
 }
