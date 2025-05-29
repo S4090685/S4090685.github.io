@@ -20,7 +20,7 @@ header{
   color: rgb(97, 97, 97);
 }
 .cards {
-  width: 1000px;
+  width: 600px;
   height: auto;
   padding: 20px;
   display: grid;
@@ -34,6 +34,7 @@ header{
   position: relative;
   cursor: pointer;
 }
+/* I have intentionally reduced the size of the card since it has a 4x3 grid, it has covered the header with the original size.  */
 .card:hover {
   scale: 0.9;
 }
@@ -118,15 +119,19 @@ header{
     position: absolute;
     bottom: 50px;
     left: 20%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     font-size: 1.8rem;
+    font-weight: bold;
     color: white;
-    background: #a794f5;
+    background:#95b3e8;
     border: none;
     border-radius: 25px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#Btn1:hover{
+  scale: 1.1;
 }
 
 

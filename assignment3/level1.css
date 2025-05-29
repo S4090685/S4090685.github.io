@@ -1,3 +1,4 @@
+/* the css for each page is almost the same */
 body{
     background-color: #ecf4ea;
     display: flex;
@@ -6,11 +7,14 @@ body{
     margin: auto;
     max-width: 1000px;
     padding-top: 80px;
-    height: 100vh;
-
 }
+/* I have picked a light green colour for the background, the reason is that I have assigned different colour background for each level,
+and the back of the card is dark coloured, it is matches fine with any colours basically, in my own opinion. Though the front of the card
+is pink and redish colour, I tried adjusting the brightness of the background, and decide to have a lighter background, which is also
+more colouful.  */
 header{
   font-family: 'Courier New', Courier, monospace;
+  /* this font has a more gaming style */
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
@@ -19,16 +23,17 @@ header{
   padding: 50px;
   color: rgb(97, 97, 97);
 }
+
 .cards {
   width: 350px;
   height: auto;
   padding: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 50px;
 }
-
+/* level one has a 2x2 grid */
 .card {
   width: 150px;
   height: 220px;
@@ -38,6 +43,7 @@ header{
 .card:hover {
   scale: 0.9;
 }
+/* adding a scale of 0.8 to visualy respond to the audience, prevent misclicking.  */
 /* placing the card diagonally for level 1 */
 .card:nth-child(1) {
   grid-column: 2;
@@ -60,14 +66,14 @@ header{
 }
 .card-inner {
   position: relative;
-  transition: transform 0.8s ease;
+  transition: transform 1s ease;
   transform-style: preserve-3d;
 }
-
+/* the card will transform at a 1 second time range, not too slow or to fast, better for a visual experience.   */
 .card.flip .card-inner {
   transform: rotateY(180deg);
 }
-
+/* the card will flip horizontally with a 180 degree to show the front side of the card.  */
 .card-face {
   position: absolute;
   backface-visibility: hidden;
@@ -76,35 +82,22 @@ header{
 .card-face.back {
   transform: rotateY(180deg);
 }
+/* it will also flip 180 degree back when turning back.  */
 
  .levelBtn{
     font-size: 1.2rem;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
-#Btn1{
-   width: 150px;
-    height: 50px;
-    position: absolute;
-    bottom: 60px;
-    left: 20%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    color: white;
-    background: #728fc0;
-    border: none;
-    border-radius: 25px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+
 #Btn2{
     width: 200px;
     height: 60px;
     position: absolute;
     bottom: 50px;
     right: 20%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     font-size: 1.8rem;
+    font-weight:bold;
     color: white;
     background: #ea93a8; 
     border: none;
@@ -113,14 +106,10 @@ header{
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
-
-  
-  /* <div class="card-container">
-      <div class="card" draggable="true">
-        <div class="card-face"><img src="cloud.png" alt="Back" /></div>
-        <div class="card-face flip">
-          <img src="queen.png" alt="Queen" />
-        </div>
-      </div>
-    </div> */
+#Btn2:hover{
+  scale: 1.1;
+}
+/* the button also uses this font but bold, with a playful pink background introducing to the next page as the next level's baground colour
+ is adjusted from a red gradient. Also having a border radius of 25px, which creates a rounded edge, it's cute and creates a aesthetic for 
+ kids game. after testing around and interacting with the site, I decided to also add a scale change after hovering, scale larger when hover
+ on to the button, so user can visually see where they're hovering onto.  */
