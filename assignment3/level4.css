@@ -121,6 +121,7 @@ header{
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+/* level for has a purple button to match with the background colour of level 3. */
 #Btn1:hover{
   scale: 1.1;
 }
@@ -141,6 +142,7 @@ header{
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+/* next level is a yellow background leading to the final leve. */
 #Btn2:hover{
   scale: 1.1;
 }

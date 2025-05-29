@@ -130,6 +130,7 @@ header{
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+/* similar to previous levels, this background colour is blue, correspond to level 4, this level is the last level, therefor it only has a previous button. */
 #Btn1:hover{
   scale: 1.1;
 }
